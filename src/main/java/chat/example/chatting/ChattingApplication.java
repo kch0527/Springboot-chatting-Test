@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}) //db사용안함
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class ChattingApplication {
 
     public static void main(String[] args) {
