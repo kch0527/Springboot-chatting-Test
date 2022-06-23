@@ -13,7 +13,6 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 public class SocketConfig implements WebSocketConfigurer {
 
     private final WebSocketHandler webSocketHandler;
-
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry.addHandler(webSocketHandler, "ws/chat").setAllowedOrigins("*");

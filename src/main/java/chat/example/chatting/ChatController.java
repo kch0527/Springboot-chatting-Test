@@ -16,7 +16,6 @@ public class ChatController {
     public List<ChatRoom> findAllRoom() {
         return chatService.findAllRoom();
     }
-
     @PostMapping
     public ChatRoom createRoom(@RequestBody String name) {
         return chatService.createRoom(name);
